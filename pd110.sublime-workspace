@@ -11,8 +11,16 @@
 			"file": "src/pd110/settings.py",
 			"settings":
 			{
-				"buffer_size": 3091,
+				"buffer_size": 3106,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/boletin/views.py",
+			"settings":
+			{
+				"buffer_size": 63,
 				"line_ending": "Unix"
 			}
 		}
@@ -98,15 +106,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3091,
+						"buffer_size": 3106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2892,
-								2892
+								1082,
+								1082
 							]
 						],
 						"settings":
@@ -116,10 +124,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1350.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/boletin/views.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -202,7 +238,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

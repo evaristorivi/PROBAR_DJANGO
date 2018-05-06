@@ -8,11 +8,11 @@
 	"buffers":
 	[
 		{
-			"file": "src/db.sqlite3",
+			"file": "src/pd110/settings.py",
 			"settings":
 			{
-				"buffer_size": 92160,
-				"encoding": "Hexadecimal",
+				"buffer_size": 3091,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -50,7 +50,8 @@
 	"expanded_folders":
 	[
 		"/C/Users/Evaristo/Desktop/pd110",
-		"/C/Users/Evaristo/Desktop/pd110/src"
+		"/C/Users/Evaristo/Desktop/pd110/src",
+		"/C/Users/Evaristo/Desktop/pd110/src/pd110"
 	],
 	"file_history":
 	[
@@ -93,27 +94,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/db.sqlite3",
-					"semi_transient": true,
+					"file": "src/pd110/settings.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 92160,
+						"buffer_size": 3091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2892,
+								2892
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1350.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

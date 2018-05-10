@@ -8,7 +8,7 @@ class Registrado(models.Model):
 	email = models.EmailField()
 	timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
 
-	def __unicode__(self): #Python 2
+	def __unicode__(self): #Python 2ok
 		return self.email
 
 	def __str__(self): #Python 3

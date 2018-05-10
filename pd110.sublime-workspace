@@ -12,15 +12,15 @@
 			"settings":
 			{
 				"buffer_size": 3106,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/boletin/views.py",
+			"file": "src/boletin/models.py",
 			"settings":
 			{
-				"buffer_size": 63,
+				"buffer_size": 399,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -59,10 +59,11 @@
 	[
 		"/C/Users/Evaristo/Desktop/pd110",
 		"/C/Users/Evaristo/Desktop/pd110/src",
-		"/C/Users/Evaristo/Desktop/pd110/src/pd110"
+		"/C/Users/Evaristo/Desktop/pd110/src/boletin"
 	],
 	"file_history":
 	[
+		"/C/Users/Evaristo/Desktop/pd110/src/pd110/settings.py"
 	],
 	"find":
 	{
@@ -97,7 +98,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -113,8 +114,8 @@
 						"selection":
 						[
 							[
-								1082,
-								1082
+								0,
+								0
 							]
 						],
 						"settings":
@@ -124,27 +125,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/boletin/views.py",
-					"semi_transient": true,
+					"file": "src/boletin/models.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 63,
+						"buffer_size": 399,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								162,
+								162
 							]
 						],
 						"settings":
@@ -155,7 +156,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

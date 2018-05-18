@@ -23,8 +23,12 @@
 {% block jumbotron %}
 
 {% if request.user.is_staff %}
-{{queryset}}
+<table class='table'>
+{% for instance in queryset %}
+<tr><td>{{ forloop.counter }}</td><td>{{ instance.nombre }}</td><td>hace {{ instance.timestamp|timesince }}</td></tr><br/>
+{% endfor %}
 {% else %}
+</table>
 <div class="jumbotron">
 <div class="container">
 
@@ -58,10 +62,10 @@
 <div class="row">
 	<div class="col-sm-3 col-xs-12 float-right">
 		{% if not user.is_authenticated %}
-		<p class='lead text-align-center'>Enviar</p>
+		<p class='lead text-align-center'>Suscribirte</p>
 		<form method="POST" action="">{% csrf_token %}
 		{{ el_form|crispy }}
-		<input class='btn btn-primary' type='submit' value='Enviar' />
+		<input class='btn btn-primary' type='submit' value='Confirmar' />
 		</form>
 		{% else %}
 		<p class='lead text-align-center'>{{ titulo }}<br/><br/><br/><i class="far fa-hand-peace fa-5x"></i></p>

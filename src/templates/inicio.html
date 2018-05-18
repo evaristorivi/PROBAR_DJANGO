@@ -21,6 +21,10 @@
 
 
 {% block jumbotron %}
+
+{% if request.user.is_staff %}
+{{queryset}}
+{% else %}
 <div class="jumbotron">
 <div class="container">
 
@@ -38,6 +42,7 @@
 </div>
 </div>
 </div>
+{% endif %}
 {% endblock %}
 
 
@@ -48,13 +53,20 @@
 <br/>
 
 {% block content %}
+{% if not request.user.is_staff %}
+
 <div class="row">
 	<div class="col-sm-3 col-xs-12 float-right">
-		<p class='lead text-align-center'>{{ titulo }}</p>
+		{% if not user.is_authenticated %}
+		<p class='lead text-align-center'>Enviar</p>
 		<form method="POST" action="">{% csrf_token %}
 		{{ el_form|crispy }}
-		<input class='btn btn-primary' type='submit' value='Recibir' />
+		<input class='btn btn-primary' type='submit' value='Enviar' />
 		</form>
+		{% else %}
+		<p class='lead text-align-center'>{{ titulo }}<br/><br/><br/><i class="far fa-hand-peace fa-5x"></i></p>
+		
+		{% endif %}
 	</div>
 <div class='col-sm-3'>
 	<p class='lead text-align-center'>Creado con Django &amp; Bootstrap.<br/>
@@ -72,4 +84,5 @@
 </div>
 
 <hr/>
+{% endif %}
 {% endblock %}

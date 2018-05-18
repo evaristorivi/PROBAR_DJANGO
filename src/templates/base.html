@@ -10,7 +10,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>{% block head_titple %}PD 110{% endblock %}</title>
+    <title>{% block head_title %}PD 110{% endblock %}</title>
+
+<style>
+{% block style %}{% endblock %}
+</style>
 
 {% include "head_css.html" %}
   </head>
@@ -18,10 +22,11 @@
   <body>
 {% include "navbar.html" %}
 
-<div class="container">
-      
 {% block jumbotron %}
 {% endblock %}
+<div class="container">
+      
+
 
 {% block content %}
 {% endblock %}
@@ -29,12 +34,6 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="{% static '/js/popper.min.js' %}"></script>
-    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+  
   </body>
 </html>

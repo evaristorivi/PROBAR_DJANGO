@@ -4,5 +4,41 @@ body {
 }
 
 .navbar-static-top {
-	margin-bottom: 19px;
+	margin-bottom: 0px;
 }
+
+.bg-dark{
+	background-color: #172548 !important;
+
+}
+
+.mb-4, .my-4{
+	margin-bottom: 0.1rem !important;
+	border-color: #337ab7 !important;
+}
+
+.form-group{
+	display: inline-flex;
+
+}
+
+.navbar-brand{
+	color: white !important;
+}
+
+.navbar-brand:hover{
+	color: #337ab7 !important;
+}
+
+.nav-link{
+	color: orange !important;
+}
+
+.nav-link:hover{
+	color: #337ab7 !important;
+}
+
+.form-control{
+	background-color: #ecf0c3 !important;
+}
+
